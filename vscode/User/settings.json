@@ -1,0 +1,108 @@
+{
+  "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/tmp/**": true,
+    "**/node_modules/**": false,
+    "**/bower_components/**": false,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "window.zoomLevel": 0,
+  "window.nativeTabs": true,
+  "typescript.check.npmIsInstalled": false,
+  "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+  // "editor.fontFamily": "'Fira Code'",
+  // "editor.fontLigatures": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.cursorStyle": "block",
+  "extensions.ignoreRecommendations": false,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 145,
+  "prettier.trailingComma": "es5",
+  // "flowide.pathToFlow": "/Users/houfeng/.nvm/versions/node/v7.7.4/bin/flow",
+  "editor.minimap.maxColumn": 50,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.fontAliasing": "antialiased",
+  "editor.fontSize": 15,
+  "git.confirmSync": false,
+  "typescript.locale": "en",
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": true,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": true,
+    "suppressWelcomeNotice": false
+  },
+  "typescript.referencesCodeLens.enabled": true,
+  "debug.inlineValues": true,
+  "gitlens.keymap": "alternate",
+  "editor.multiCursorModifier": "alt",
+  "cSpell.userWords": [
+    "Prefilter",
+    "fibos",
+    "mobx"
+  ],
+  "[markdown]": {},
+  "gitlens.historyExplorer.enabled": false,
+  "gitlens.gitExplorer.files.layout": "auto",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "vim.disableExtension": false,
+  // "tslint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "cSpell.language": "en",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "debug.toolBarLocation": "floating",
+  "editor.tabSize": 2,
+  "breadcrumbs.enabled": true,
+  "editor.tabCompletion": "on",
+  "explorer.confirmDelete": false,
+  "gitlens.views.repositories.files.layout": "auto",
+  "gitlens.views.fileHistory.enabled": false,
+  "gitlens.views.lineHistory.enabled": false,
+  "codestream.email": "houfeng0923@gmail.com",
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      // Prettier option here
+      "singleQuote": true
+    }
+  },
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "leetcode.endpoint": "leetcode-cn",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "projectManager.showProjectNameInStatusBar": false
+  // "[typescript]": {
+  //   "editor.codeActionsOnSave": {
+  //     "source.organizeImports": true
+  //   }
+  // },
+  // "[typescriptreact]": {
+  //   "editor.codeActionsOnSave": {
+  //       "source.organizeImports": true
+  //   }
+  // }
+  // "search.location": "panel",
+}

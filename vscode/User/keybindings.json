@@ -1,0 +1,83 @@
+// 将键绑定放入此文件中以覆盖默认值
+[{ "key": "alt+space",            "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+},
+{
+    "key": "cmd+[",
+    "command": "workbench.action.navigateBack"
+},
+{
+    "key": "ctrl+-",
+    "command": "-workbench.action.navigateBack"
+},
+{
+    "key": "ctrl+shift+cmd+[",
+    "command": "editor.action.outdentLines",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "cmd+[",
+    "command": "-editor.action.outdentLines",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "cmd+[",
+    "command": "workbench.action.quickInputBack",
+    "when": "inQuickOpen"
+},
+{
+    "key": "ctrl+-",
+    "command": "-workbench.action.quickInputBack",
+    "when": "inQuickOpen"
+},
+{
+    "key": "shift+alt+cmd+]",
+    "command": "editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "cmd+]",
+    "command": "-editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForward"
+},
+{
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward"
+},
+{
+    "key": "alt+r",
+    "command": "workbench.action.openRecent"
+},
+{
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+},
+{
+    "key": "cmd+k cmd+k",
+    "command": "workbench.action.navigateToLastEditLocation"
+},
+{
+    "key": "cmd+k cmd+q",
+    "command": "-workbench.action.navigateToLastEditLocation"
+},
+// {
+//     "key": "cmd+right",
+//     "command": "workbench.action.nextEditor"
+// },
+// {
+//     "key": "alt+cmd+right",
+//     "command": "-workbench.action.nextEditor"
+// },
+// {
+//     "key": "cmd+left",
+//     "command": "workbench.action.previousEditor"
+// },
+// {
+//     "key": "alt+cmd+left",
+//     "command": "-workbench.action.previousEditor"
+// }
+]
