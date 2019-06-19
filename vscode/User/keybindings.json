@@ -64,6 +64,18 @@
     "key": "cmd+k cmd+q",
     "command": "-workbench.action.navigateToLastEditLocation"
 },
+{
+    "key": "ctrl+shift+down",
+    "command": "editor.emmet.action.balanceOut"
+},
+{
+    "key": "ctrl+shift+up",
+    "command": "editor.emmet.action.balanceIn"
+},
+{
+    "key": "alt+b",
+    "command": "multiCommand.makeRoom"
+}
 // {
 //     "key": "cmd+right",
 //     "command": "workbench.action.nextEditor"

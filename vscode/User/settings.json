@@ -33,7 +33,7 @@
   "prettier.printWidth": 145,
   "prettier.trailingComma": "es5",
   // "flowide.pathToFlow": "/Users/houfeng/.nvm/versions/node/v7.7.4/bin/flow",
-  "editor.minimap.maxColumn": 50,
+  "editor.minimap.maxColumn": 30,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.fontAliasing": "antialiased",
   "editor.fontSize": 15,
@@ -93,7 +93,9 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "projectManager.showProjectNameInStatusBar": false
+  "projectManager.showProjectNameInStatusBar": false,
+  "editor.minimap.renderCharacters": false,
+  "files.defaultLanguage": "markdown",
   // "[typescript]": {
   //   "editor.codeActionsOnSave": {
   //     "source.organizeImports": true
@@ -105,4 +107,14 @@
   //   }
   // }
   // "search.location": "panel",
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.makeRoom",
+      "sequence": [
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.action.toggleActivityBarVisibility"
+      ]
+    }
+  ],
+  "workbench.activityBar.visible": true
 }
