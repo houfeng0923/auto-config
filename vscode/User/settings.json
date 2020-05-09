@@ -1,22 +1,36 @@
 {
   "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home",
+  "peacock.surpriseMeOnStartup": true,
+  "peacock.affectActivityBar": true,
+  "peacock.affectStatusBar": true,
+  "peacock.affectTitleBar": true,
+  "peacock.elementAdjustments": {
+    "activityBar": "lighten"
+  },
   "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/tmp/**": true,
-    "**/node_modules/**": false,
-    "**/bower_components/**": false,
     "**/.classpath": true,
+    "**/.DS_Store": true,
+    "**/.factorypath": true,
+    "**/.git": true,
+    "**/.git/**": true,
+    "**/.hg": true,
     "**/.project": true,
     "**/.settings": true,
-    "**/.factorypath": true
+    "**/.svn": true,
+    "**/bower_components/**": true,
+    "**/CVS": true,
+    "**/node_modules/**": false,
+    "**/tmp/**": true,
+    "h": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
   },
   "window.zoomLevel": 0,
   "window.nativeTabs": true,
-  "typescript.check.npmIsInstalled": false,
   "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
   // "editor.fontFamily": "'Fira Code'",
   // "editor.fontLigatures": true,
@@ -26,6 +40,10 @@
     "strings": true
   },
   "editor.cursorStyle": "block",
+  "editor.rulers": [
+    { "column": 90, "color": "#4b4b4b57" },
+    { "column": 110, "color": "#ff00008e" }
+  ],
   "extensions.ignoreRecommendations": false,
   "files.trimTrailingWhitespace": true,
   "files.eol": "\n",
@@ -57,19 +75,54 @@
   "gitlens.keymap": "alternate",
   "editor.multiCursorModifier": "alt",
   "cSpell.userWords": [
+    "Chainable",
+    "Evented",
     "Prefilter",
+    "asyncer",
+    "autohiding",
+    "balrog",
+    "colorpicker",
+    "datetimepicker",
+    "datetimes",
+    "deepmerge",
+    "devtool",
+    "endregion",
+    "eonasdan",
+    "eqeqeq",
+    "erebor",
     "fibos",
-    "mobx"
+    "gitkeep",
+    "houfeng",
+    "htmlbars",
+    "intraday",
+    "iview",
+    "maxlength",
+    "mixins",
+    "mobx",
+    "nextop",
+    "nullish",
+    "proto",
+    "qunit",
+    "realtime",
+    "scrollable",
+    "slicksort",
+    "sortablejs",
+    "storysource",
+    "taobao",
+    "tinycolor",
+    "transitionend",
+    "unrealize",
+    "vconsole",
+    "visibilitychange",
+    "woff",
+    "yarnpkg",
+    "zindex"
   ],
   "[markdown]": {},
   "gitlens.historyExplorer.enabled": false,
   "gitlens.gitExplorer.files.layout": "auto",
   "liveServer.settings.donotShowInfoMsg": true,
   "vim.disableExtension": false,
-  // "tslint.autoFixOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
   "cSpell.language": "en",
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
@@ -79,13 +132,21 @@
   "editor.tabCompletion": "on",
   "explorer.confirmDelete": false,
   "gitlens.views.repositories.files.layout": "auto",
-  "gitlens.views.fileHistory.enabled": false,
+  "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": false,
   "codestream.email": "houfeng0923@gmail.com",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+  "vetur.useWorkspaceDependencies": true,
   "vetur.format.defaultFormatterOptions": {
     "prettier": {
       // Prettier option here
-      "singleQuote": true
+      "singleQuote": true,
+      "printWidth": 120,
+      "maxLineLength": [true, 120]
     }
   },
   "java.errors.incompleteClasspath.severity": "ignore",
@@ -96,11 +157,6 @@
   "projectManager.showProjectNameInStatusBar": false,
   "editor.minimap.renderCharacters": false,
   "files.defaultLanguage": "markdown",
-  // "[typescript]": {
-  //   "editor.codeActionsOnSave": {
-  //     "source.organizeImports": true
-  //   }
-  // },
   // "[typescriptreact]": {
   //   "editor.codeActionsOnSave": {
   //       "source.organizeImports": true
@@ -116,5 +172,37 @@
       ]
     }
   ],
-  "workbench.activityBar.visible": true
+  "workbench.activityBar.visible": true,
+  "search.exclude": {
+    "**/*.js.map": true,
+    "**/*.min.js": true,
+    "**/concat-stats-for": true,
+    "**/tmp": true
+  },
+  "workbench.statusBar.visible": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "workbench.colorTheme": "Eva Dark",
+  "[typescript]": {
+    "editor.foldingStrategy": "indentation",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false,
+    },
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "vetur.format.enable": false,
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.workspaceFolder": "/Users/houfeng/.leetcode",
+  "leetcode.defaultLanguage": "javascript",
+  "leetcode.hint.commandShortcut": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.columnSelection": false,
+  "cSpell.allowCompoundWords": true,
 }

@@ -75,6 +75,14 @@
 {
     "key": "alt+b",
     "command": "multiCommand.makeRoom"
+},
+{
+    "key": "alt+cmd+t alt+cmd+t",
+    "command": "workbench.action.closeOtherEditors"
+},
+{
+    "key": "alt+cmd+t",
+    "command": "-workbench.action.closeOtherEditors"
 }
 // {
 //     "key": "cmd+right",
