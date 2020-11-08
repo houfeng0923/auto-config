@@ -1,5 +1,10 @@
 // 将键绑定放入此文件中以覆盖默认值
-[{ "key": "alt+space",            "command": "editor.action.triggerSuggest",
+[{
+    "key": "shift+cmd+j",
+    "command": "workbench.action.toggleMaximizedPanel"
+},
+{   "key": "alt+space",
+    "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
 },
 {

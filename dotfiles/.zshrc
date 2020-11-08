@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 # python
 # alias python="/usr/local/bin/python3"
-
+alias py=python
 
 # load zsh-git-prompt
 # can use houfeng0923/zsh-git-prompt instead
@@ -137,7 +137,7 @@ load-nvmrc() {
 if [ ! "$(type -w __init_nvm)" = '__init_nvm: function' ]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-  declare -a __node_commands=('nvm' 'node' 'npm' 'yarn' 'gulp' 'grunt' 'webpack' 'ember' 'vue' 'create-react-app')
+  declare -a __node_commands=('nvm' 'node' 'npm' 'npx' 'yarn' 'gulp' 'grunt' 'webpack' 'ember' 'vue' 'create-react-app')
   function __init_nvm() {
     for i in "${__node_commands[@]}"; do unalias $i; done
     # . "$NVM_DIR"/nvm.sh
@@ -191,7 +191,8 @@ export PATH="/Users/houfeng/soft/platform-tools:$PATH"
 ### npm alisa
 
 alias nr="npm run "
-
+alias n="npm"
+alias y="yarn"
 ### git alias
 alias gls="git ls"
 alias gcm="git cm"
@@ -305,3 +306,10 @@ alias t="tmux"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+
+# mvn
+
+export MAVEN_OPTS="--add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED"
+

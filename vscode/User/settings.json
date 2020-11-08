@@ -20,6 +20,7 @@
     "**/bower_components/**": true,
     "**/CVS": true,
     "**/node_modules/**": false,
+    "**/app-advance/**": false, // temp
     "**/tmp/**": true,
     "h": true
   },
@@ -27,11 +28,12 @@
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/**": true,
-    "**/tmp/**": true,
+    "**/tmp/**": true
   },
   "window.zoomLevel": 0,
   "window.nativeTabs": true,
   "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Cascadia Code SemiLight'",
   // "editor.fontFamily": "'Fira Code'",
   // "editor.fontLigatures": true,
   "editor.quickSuggestions": {
@@ -41,8 +43,14 @@
   },
   "editor.cursorStyle": "block",
   "editor.rulers": [
-    { "column": 90, "color": "#4b4b4b57" },
-    { "column": 110, "color": "#ff00008e" }
+    {
+      "column": 90,
+      "color": "#4b4b4b57"
+    },
+    {
+      "column": 110,
+      "color": "#ff00008e"
+    }
   ],
   "extensions.ignoreRecommendations": false,
   "files.trimTrailingWhitespace": true,
@@ -78,32 +86,42 @@
     "Chainable",
     "Evented",
     "Prefilter",
+    "USDJPY",
     "asyncer",
     "autohiding",
     "balrog",
+    "builtins",
     "colorpicker",
+    "corejs",
+    "datetime",
     "datetimepicker",
     "datetimes",
     "deepmerge",
     "devtool",
+    "dppx",
     "endregion",
     "eonasdan",
     "eqeqeq",
     "erebor",
     "fibos",
     "gitkeep",
+    "heapq",
+    "heatmap",
     "houfeng",
     "htmlbars",
     "intraday",
     "iview",
     "maxlength",
+    "mchart",
     "mixins",
     "mobx",
     "nextop",
+    "noldor",
     "nullish",
     "proto",
     "qunit",
     "realtime",
+    "runloop",
     "scrollable",
     "slicksort",
     "sortablejs",
@@ -146,7 +164,10 @@
       // Prettier option here
       "singleQuote": true,
       "printWidth": 120,
-      "maxLineLength": [true, 120]
+      "maxLineLength": [
+        true,
+        120
+      ]
     }
   },
   "java.errors.incompleteClasspath.severity": "ignore",
@@ -181,11 +202,10 @@
   },
   "workbench.statusBar.visible": true,
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "workbench.colorTheme": "Eva Dark",
   "[typescript]": {
     "editor.foldingStrategy": "indentation",
     "editor.codeActionsOnSave": {
-      "source.organizeImports": false,
+      "source.organizeImports": false
     },
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
@@ -204,5 +224,35 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "editor.columnSelection": false,
-  "cSpell.allowCompoundWords": true,
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "dart.openDevTools": "flutter",
+  "workbench.colorTheme": "Sandy Desert",
+  "zenMode.hideLineNumbers": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "python.languageServer": "Microsoft",
+  "tabnine.experimentalAutoImports": true,
+  "editor.formatOnSaveMode": "modifications",
+  "python.dataScience.askForKernelRestart": false,
+  "cSpell.allowCompoundWords": false,
+  "dart.checkForSdkUpdates": false,
+  "eslint.codeAction.showDocumentation": {
+
+    "enable": true
+  },
 }
